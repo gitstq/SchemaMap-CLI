@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SchemaMap-CLI"
+version = "1.0.0"
+description = "轻量级数据库Schema变更影响分析与智能迁移引擎"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "gitstq", email = "gitstq@example.com"}
+]
+keywords = ["database", "schema", "migration", "impact-analysis", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Database",
+    "Topic :: Software Development :: Tools",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+schemamap = "schemamap.cli.main:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/SchemaMap-CLI"
+Repository = "https://github.com/gitstq/SchemaMap-CLI"
+Issues = "https://github.com/gitstq/SchemaMap-CLI/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["schemamap*"]

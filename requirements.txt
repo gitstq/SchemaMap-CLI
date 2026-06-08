@@ -1,0 +1,2 @@
+# SchemaMap-CLI 零外部依赖
+# 所有功能均使用 Python 标准库实现
